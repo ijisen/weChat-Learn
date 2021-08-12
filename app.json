@@ -9,7 +9,7 @@
       "root": "packageEvent",
       "pages": [
         "pages/demo/demo",
-        "pages/event/envent"
+        "pages/event/event"
       ]
     }
   ],

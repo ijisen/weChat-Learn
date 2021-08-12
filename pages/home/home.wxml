@@ -1,7 +1,6 @@
 <!--pages/demo/demo.wxml-->
-<view>
+<view class="navBar">
   <button type="primary"
-          size="mini"
           wx:for="{{navBar}}"
           wx:key="index">
     <navigator url="{{item.path}}">{{ item.name}}</navigator>

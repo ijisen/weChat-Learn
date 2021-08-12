@@ -13,7 +13,7 @@ Page({
       },
       {
         name: 'EVENT',
-        path: '../../packageEvent/pages/envent/envent',
+        path: '../../packageEvent/pages/event/event',
       },
     ]
   },
