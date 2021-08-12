@@ -1,0 +1,11 @@
+<!--pages/demo/demo.wxml-->
+<view class="container-demo">
+  <text class="item">项目一</text>
+  <text class="item" data-role="sort" bindtap="handleClick">排序</text>
+  <text class="item" data-role="add" bindtap="handleClick">新增</text>
+  <text class="item" bindtap="handleClick">删除</text>
+</view>
+<view>
+  <home-item wx:for="{{student}}" 
+  info="{{item}}" wx:key="index"></home-item>
+</view>

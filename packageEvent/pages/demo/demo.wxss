@@ -1,0 +1,39 @@
+/* pages/demo/demo.wxss */
+.container-demo {
+  display: flex;
+  width: 100%;
+  background-color: bisque;
+  /**
+   * 项目的排列方向
+   * row(default) 主轴为水平方向，起点在左端。
+   * row-reverse  主轴为水平方向，起点在右端。
+   * column  主轴为垂直方向，起点在上沿。
+   * column-reverse 主轴为垂直方向，起点在下沿。
+   * */
+  flex-direction: row;
+  /**
+   * 是否换行
+   * nowrap(default) 不换行
+   * wrap  换行，第一行在上方。
+   * wrap-reverse 换行，第一行在下方。
+   * */
+  flex-wrap: nowrap;
+  /**
+   * 主轴上的对齐方式
+   * flex-start(default) 左对齐
+   * flex-end  右对齐
+   * center 居中对齐
+   * space-between 两端对齐，项目直接的间隔相等 |B B B|
+   * space-around 每个项目两侧的间隔相等。| B  B  B |
+   * space-evenly 间隔相等。| B B B |
+   * */
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.container-demo .item {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  font-size: 12px;
+  background-color: aqua;
+}

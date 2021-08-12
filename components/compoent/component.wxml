@@ -1,0 +1,16 @@
+<!--components/compoent/component.wxml-->
+<template name="girl">
+1111
+  <view>
+     She is {{ name }}, I'm {{ age }}
+  </view>
+</template>
+<template name="boy">
+222
+  <view>
+    He Name is {{ name }}, I'm {{ age }}
+  </view>
+</template>
+<block>
+  <template is="{{info.gender || 'girl'}}" data="{{...info}}"></template>
+</block>
