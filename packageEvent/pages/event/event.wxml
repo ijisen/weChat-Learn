@@ -1,2 +1,63 @@
 <!--pages/event/envent.wxml-->
-<text>pages/event/event.wxml</text>
+<!-- 
+  事件冒泡阶段： 事件冒泡是由内往外。
+  bind：绑定事件，不会阻止事件冒泡
+  catch：绑定事件， 会阻止事件冒泡
+  mut-bind: 一个 mut-bind 触发后，如果事件冒泡到其他节点上，
+            其他节点上的 mut-bind 绑定函数不会被触发
+ -->
+<view class="page-container">
+  <view class="page-title">事件系统</view>
+  <view class="block">
+    <view class="title">阻止事件冒泡</view>
+    <view data-role="Grander" bind:tap="handleTap">
+      <button data-node="btn grander" type="primary">grander</button>
+      <!-- catch 阻止事件冒泡 -->
+      <view data-role="Parent" catch:tap="handleTap">
+        <button data-node="btn parent" type="primary">parent</button>
+        <button data-node="btn SON" data-role="Son" type="primary"
+          bind:tap="handleTap">SON</button>
+      </view>
+    </view>
+  </view>
+  <view class="block">
+    <view class="title">互斥事件绑定</view>
+      <!--  点击 inner时，触发此事件 -->
+      <view data-role="Grander" bind:tap="handleTap">
+      <button type="primary">Grander</button>
+      <!-- 点击 inner时，不触发此事件 -->
+      <view data-role="Parent" mut-bind:tap="handleTap">
+        <button type="primary">Parent</button>
+        <!--  点击 inner时，触发此事件 -->
+        <view data-role="SON" bindtap="handleTap">
+          <button type="primary">SON</button>
+          <view data-role="inner view" mut-bind:tap="handleTap">
+            <button type="primary">inner view</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 
+    事件捕获阶段：事件捕获是从外往内执行，捕获阶段位于冒泡阶段之前。
+      capture-bind：
+      capture-catch： 会中断捕获阶段和取消冒泡阶段
+   -->
+   <view class="block">
+    <view class="title">事件捕获</view>
+    <view data-role="Grander" bind:touchstart="handleTouchstart"
+          capture-bind:touchstart="handleCaptureTouchstart">
+        <button type="primary">grander</button>
+        <!--  捕获阶段，会阻止继续操作 -->
+        <view data-role="Parent" bind:touchstart="handleTouchstart"
+              capture-catch:touchstart="handleCaptureTouchstart">
+          <button type="primary">Parent</button>
+          <!-- 由于 parent 捕获阶段阻止了，后面的捕获&冒泡都不会再执行 -->
+          <view data-role="Son" bind:touchstart="handleTouchstart"
+                capture-bind:touchstart="handleCaptureTouchstart">
+            <button type="primary">Son</button>
+          </view>
+        </view>
+      </view>
+   </view>
+</view>

@@ -62,5 +62,26 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  handleTap(event) {
+    // target 触发事件的元素
+    // currentTarget 绑定事件的元素
+    const {target, currentTarget} = event;
+    const {dataset:{role=''}} = currentTarget;
+    console.log(role)
+  },
+  handleTouchstart (event) {
+    // target 触发事件的元素
+    // currentTarget 绑定事件的元素
+    const {target, currentTarget} = event;
+    const {dataset:{role=''}} = currentTarget;
+    console.log(`${role} Touchstart`)
+  },
+  handleCaptureTouchstart (event) {
+    // target 触发事件的元素
+    // currentTarget 绑定事件的元素
+    const {target, currentTarget} = event;
+    const {dataset:{role=''}} = currentTarget;
+    console.log(`${role} Capture Touchstart`)
+  },
 })

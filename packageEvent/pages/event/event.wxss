@@ -1,1 +1,24 @@
 /* pages/event/event.wxss */
+.page-container {
+  padding: 20rpx;
+  margin: 0 auto;
+}
+.page-container .page-title {
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.page-container button{
+  margin-bottom: 10rpx;
+}
+.page-container .block {
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  border: 1rpx solid #999;
+  border-radius: 2rpx;
+}
+.page-container .block .title{
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+ }

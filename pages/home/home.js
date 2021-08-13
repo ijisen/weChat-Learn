@@ -12,7 +12,7 @@ Page({
         path: '../../packageEvent/pages/demo/demo',
       },
       {
-        name: 'EVENT',
+        name: '事件系统',
         path: '../../packageEvent/pages/event/event',
       },
     ]
