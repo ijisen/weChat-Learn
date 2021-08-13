@@ -5,4 +5,5 @@
           wx:key="index">
     <navigator url="{{item.path}}">{{ item.name}}</navigator>
  </button>
+ <rich-text nodes="<h1 class='title'>11111ss</h1>"></rich-text>
 </view>

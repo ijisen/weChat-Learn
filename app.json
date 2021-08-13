@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "packageEvent/pages/event/event",
+  "entryPagePath": "pages/home/home",
   "pages": [
     "pages/home/home",
     "pages/index/index",
