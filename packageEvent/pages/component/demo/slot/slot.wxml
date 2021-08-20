@@ -1,0 +1,11 @@
+<!--packageEvent/pages/component/component/component.wxml-->
+<view class="block">
+  <slot name="header">插槽头部</slot>  
+  <view class="title">
+    <view class="parent-class">这里是组件内部的节点</view>
+    <view class="small-title">Parent CSS</view>
+  </view>
+  <slot>插槽</slot>
+  <slot name="footer">插槽薇部</slot>  
+</view>
+

@@ -1,0 +1,9 @@
+/*
+组件可以指定它所在节点的默认样式，使用 :host 选择器
+*/
+
+:host {
+  color: gold;
+  background-color: green;
+  font-size: 28rpx;
+}

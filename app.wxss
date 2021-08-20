@@ -21,13 +21,13 @@
 .page-container button{
   margin-bottom: 10rpx;
 }
-.page-container .block {
+.block {
   margin-bottom: 20rpx;
   padding: 10rpx;
   border: 1rpx solid #999;
   border-radius: 2rpx;
 }
-.page-container .block .title{
+.block .title{
   padding-top: 10rpx;
   padding-bottom: 10rpx;
   text-align: center;

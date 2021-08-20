@@ -1,5 +1,6 @@
 <!--pages/demo/demo.wxml-->
-<view class="navBar">
+<view class="navBar page-container">
+  <view class="page-title">weChat 学习笔记</view>
   <button type="primary"
           wx:for="{{navBar}}"
           wx:key="index">

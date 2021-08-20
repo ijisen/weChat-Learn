@@ -1,0 +1,13 @@
+/* packageEvent/pages/component/index.wxss */
+.small-title {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  font-size: 12px;
+  color: red;
+}
+.orchid-class {
+  color: orchid;
+}
+.link-class {
+  color: aqua;
+}

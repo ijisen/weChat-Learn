@@ -1,0 +1,16 @@
+<!--packageEvent/pages/component/index.wxml-->
+<view class="page-container">
+  <view class="page-title">组件-基础</view>
+  <slot-wapper>
+    <view slot="footer">FOOTER</view>
+    <view class="title">这是外部传入的组件</view>
+    <view slot="header">HEADER</view>
+  </slot-wapper>
+  <view class="block">
+    <view class="title">组件-外部样式类</view>
+    <external-classes parent-class="orchid-class">我的样式是从父组件传参来的</external-classes>
+    <external-classes parent-class="link-class">我的样式是从父组件传参来的</external-classes>
+    <!-- 组件的 parent-class 样式不会生效 -->
+    <external-classes>组件的 parent-class 不会生效</external-classes>
+  </view>
+</view>

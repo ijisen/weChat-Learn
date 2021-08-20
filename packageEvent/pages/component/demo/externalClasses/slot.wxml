@@ -1,0 +1,8 @@
+<!--packageEvent/pages/component/component/component.wxml-->
+<view class="block">
+  <view class="parent-class">
+    <slot>我的样式</slot>
+  </view>
+  <view class="~orchid-class">~ 父组件样式</view>
+</view>
+

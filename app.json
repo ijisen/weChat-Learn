@@ -1,5 +1,5 @@
 {
-  "entryPagePath": "pages/home/home",
+  "entryPagePath": "packageEvent/pages/component/index",
   "pages": [
     "pages/home/home",
     "pages/index/index",
@@ -10,7 +10,8 @@
       "root": "packageEvent",
       "pages": [
         "pages/demo/demo",
-        "pages/event/event"
+        "pages/event/event",
+        "pages/component/index"
       ]
     }
   ],

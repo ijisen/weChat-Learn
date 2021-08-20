@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "slot-wapper": "./demo/slot/slot",
+    "external-classes": "./demo/externalClasses/slot"
+  }
+}

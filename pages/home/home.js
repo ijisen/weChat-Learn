@@ -14,6 +14,10 @@ Page({
       {
         name: '事件系统',
         path: '../../packageEvent/pages/event/event',
+      },,
+      {
+        name: '组件',
+        path: '../../packageEvent/pages/component/index',
       },
     ]
   },
@@ -23,6 +27,7 @@ Page({
    */
   onLoad: function (options) {
     console.log('onLoad');
+    wx.showLoading()
     this.shareGlobalMessage()
     wx.login({
       success: (res) => {
@@ -48,7 +53,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.showLoading()
   },
 
   /**
